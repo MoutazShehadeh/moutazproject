@@ -1,0 +1,31 @@
+table {
+    font-family:  sans-serif;
+   
+    width: 80%;
+  margin:0 120px;
+ padding:0 75px;
+  height:250px;
+
+}
+
+td, th {
+    border: 1px solid ;
+    text-align: Center;
+    padding: 8px;
+    color:white;
+}
+
+tr {
+    background-color: lightgreen;
+}
+body
+{
+ background-image: url("h11.jpg");
+
+}
+a
+{
+font-size:1.3em;
+color:white;
+text-decoration:none;
+}
