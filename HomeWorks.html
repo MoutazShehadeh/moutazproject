@@ -1,0 +1,85 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            display: inline;
+        }
+    </style>
+</head>
+<body>
+    <div id="d1">
+
+    </div>
+
+    
+   <input type="text" id="ree">
+   
+
+   
+   <div id="rr">
+
+   </div>
+   <h1 id="ee">
+
+   </h1>
+ 
+    <script>
+       var arrTypes=["text","Number","Date","Range","button","email","color"];
+       setInterval(function() {
+           ree.type=arrTypes[Math.round(Math.random()*arrTypes.length-1)];
+           console.log(arrTypes[Math.round(Math.random()*arrTypes.length-1)])
+           
+       }, 1000);
+       
+
+        var myName='Moutaz';
+        setInterval(function()  {
+            rr.innerHTML="";
+            for(let i=0;i<myName.length;i++)
+            {
+               
+                
+                rr.innerHTML+="<h1 style='color:" + "rgb(" + Math.round(Math.random()*255)
+                + "," + Math.round(Math.random()*255) + "," + Math.round(Math.random()*255) + ")" + "'>"
+                + myName[i] +"</h1>";
+
+
+
+            }
+            
+        }, 2000);
+        
+        
+        setInterval(function(){
+
+            ee.innerHTML="Hello Guys Welcome to my Course"
+            
+        }, 3000);
+
+
+        setInterval(function(){
+
+       ee.innerHTML=""
+
+            }, 3000);
+        
+  function reverseName(name)
+{
+    var rev="";
+    for(var i=name.length-1;i>=0;i--)
+    {
+        rev+=name[i];
+        //console.log(name[i])
+    }
+   
+    return rev;
+}
+d1.innerHTML="<h2>"+"this is how to reverse moutaz:----   "+reverseName("moutaz")+"</h2>"
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Date timer example</title>
+ <style type = "text/css">
+         
+     .btn {background:blue; color:white; 
+           width:100px; height:30px; margin-left:10px;}
+     #para {color:red; font-weight:bold; margin-left:20px;
+            font-size:18px;}
+                
+   </style>
+   <script>
+     var timer,tpara,image,d,t;
+
+     function start() {
+        var button = document.getElementById("stop");
+        button.addEventListener("click",StopTimer);
+        timer = setInterval("DateTimer()", 1000);
+        tpara = document.getElementById("para");
+        tpara1 = document.getElementById("o");
+     }
+
+    function DateTimer() {
+       d = new Date();
+       t = d.toLocaleTimeString();
+       tpara.innerHTML = t;
+
+      t=t-8;
+      tpara1.innerHTML=t;
+
+    }
+
+    function StopTimer() {
+       clearInterval(timer);
+    }
+
+    addEventListener("load",start);
+  </script>
+</head>
+<body>
+
+<p style="color:navyblue;font-size:20px;">Date Timer Example</p>
+<p id="para"></p>
+
+<input class="btn" id="stop" type="button" value="Stop Timer">
+
+</body>
+</html>

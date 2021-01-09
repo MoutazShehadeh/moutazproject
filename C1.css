@@ -28,28 +28,13 @@ text-decoration:none;
 color:white;
 }
 
-h2
-{
-   
-   position: absolute;
-    display: inline-block;
-    margin:0 25px;
-    padding:0 10px;
-    height:40px;
-    color:MediumSeaGreen;
-    
 
-}
 iframe
 {
  display: block;
 margin: 0 auto;
 }
-body
-{
-   background-image: url("C.jpg");
 
-}
 form
 {
 margin:0  530px;
@@ -58,7 +43,26 @@ display: block;
 font-size:1.3em;
 color:white;
 }
+table {
+    font-family:  sans-serif;
+   
+    width: 80%;
+  margin:0 120px;
+ padding:0 75px;
+  height:250px;
 
+}
+
+td, th {
+    border: 1px solid ;
+    text-align: Center;
+    padding: 8px;
+    color:white;
+}
+
+tr {
+    background-color: lightgreen;
+}
 
 .topleft {
     
